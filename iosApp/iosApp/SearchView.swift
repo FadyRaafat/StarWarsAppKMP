@@ -8,15 +8,7 @@ struct SearchView: View {
     @EnvironmentObject var themeManager: ThemeManager
     
     var body: some View {
-        VStack(spacing: 16) {
-            // Header
-            Text("Star Wars Character Search")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .foregroundColor(themeManager.currentTheme.primary)
-                .multilineTextAlignment(.center)
-                .padding(.top, 20)
-            
+        VStack(spacing: 16) {            
             // Search Row (matching Android side-by-side layout)
             HStack(spacing: 8) {
                 // Search Field
