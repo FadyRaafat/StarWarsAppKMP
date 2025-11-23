@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Star Wars KMP</string>
+    
+    <!-- Search Screen Strings -->
+    <string name="search_placeholder">Enter character name...</string>
+    <string name="search_content_description">Search</string>
+    <string name="search_button_searching">Searching...</string>
+    <string name="search_button_text">Submit</string>
+    <string name="empty_search_title">Search for Star Wars characters</string>
+    <string name="empty_search_subtitle">Enter a character name to discover their homeworld</string>
+    <string name="error_title">Oops! Something went wrong</string>
+    <string name="try_again">Try Again</string>
+    
+    <!-- People List Screen Strings -->
+    <string name="found_characters">Found %1$d character%2$s</string>
+    <string name="found_characters_singular" />
+    <string name="found_characters_plural">s</string>
+    <string name="view_homeworld_description">View homeworld</string>
+    
+    <!-- Planet Detail Modal Strings -->
+    <string name="homeworld_details_title">Homeworld Details</string>
+    <string name="close_description">Close</string>
+    <string name="loading_planet_info">Loading planet information...</string>
+    <string name="homeworld_label">Homeworld:</string>
+    <string name="gravity_label">Gravity:</string>
+    <string name="terrain_label">Terrain:</string>
+    <string name="population_label">Population:</string>
+    <string name="failed_to_load_planet">Failed to load planet</string>
+    <string name="retry">Retry</string>
+</resources>

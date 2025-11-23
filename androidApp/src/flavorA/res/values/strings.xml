@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Star Wars A</string>
+    <string name="app_flavor">FlavorA</string>
+    <string name="flavor_description">Blue Theme Edition</string>
+</resources>

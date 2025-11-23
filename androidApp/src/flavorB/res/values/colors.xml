@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FlavorB Purple Theme -->
+    <color name="flavor_primary">#9C27B0</color>
+    <color name="flavor_secondary">#7B1FA2</color>
+    <color name="flavor_background">#F5F5F5</color>
+    <color name="flavor_surface">#FFFFFF</color>
+    <color name="flavor_on_primary">#FFFFFF</color>
+    <color name="flavor_on_secondary">#FFFFFF</color>
+    <color name="flavor_on_background">#212121</color>
+    <color name="flavor_on_surface">#212121</color>
+</resources>
