@@ -1,6 +1,5 @@
 package com.fady.starwars
 
-import com.fady.starwars.data.repository.StarWarsRepository
 import com.fady.starwars.presentation.viewmodel.StarWarsViewModel
 
 /**
@@ -11,9 +10,3 @@ fun createStarWarsViewModel(): StarWarsViewModel {
     return StarWarsViewModel()
 }
 
-/**
- * Factory function to create StarWarsRepository with default dependencies.
- */
-fun createStarWarsRepository(): StarWarsRepository {
-    return StarWarsRepository()
-}

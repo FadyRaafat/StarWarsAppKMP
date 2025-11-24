@@ -1,7 +1,6 @@
 package com.fady.starwars.data.repository
 
 import com.fady.starwars.data.remote.StarWarsApi
-import com.fady.starwars.data.remote.StarWarsApiException
 import com.fady.starwars.data.remote.StarWarsApiImpl
 import com.fady.starwars.domain.model.Person
 import com.fady.starwars.domain.model.Planet
@@ -25,10 +24,8 @@ class StarWarsRepository(
                 val people = peopleDto.map { it.toDomain() }
                 Result.success(people)
             }
-        } catch (e: StarWarsApiException) {
-            Result.failure(e)
         } catch (e: Exception) {
-            Result.failure(StarWarsApiException("Unexpected error occurred: ${e.message}", e))
+            Result.failure(e)
         }
     }
 
@@ -41,10 +38,8 @@ class StarWarsRepository(
                 val planet = planetDto.toDomain()
                 Result.success(planet)
             }
-        } catch (e: StarWarsApiException) {
-            Result.failure(e)
         } catch (e: Exception) {
-            Result.failure(StarWarsApiException("Unexpected error occurred: ${e.message}", e))
+            Result.failure(e)
         }
     }
 }

@@ -12,9 +12,6 @@ import io.ktor.client.plugins.HttpRequestTimeoutException
 import io.ktor.client.plugins.ServerResponseException
 import io.ktor.client.request.get
 import io.ktor.client.request.url
-import io.ktor.http.URLProtocol
-import io.ktor.http.path
-import io.ktor.http.parameters
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.withContext
@@ -94,7 +91,3 @@ class StarWarsApiImpl(
     }
 }
 
-class StarWarsApiException(
-    message: String,
-    cause: Throwable? = null
-) : Exception(message, cause)

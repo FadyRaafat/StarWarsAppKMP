@@ -110,9 +110,6 @@ class StarWarsViewModel(
         _planetState.value = UiState.Idle
     }
 
-    fun clearSearchState() {
-        _searchState.value = UiState.Idle
-    }
 
     fun retrySearch() {
         val currentQuery = _searchQuery.value

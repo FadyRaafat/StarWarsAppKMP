@@ -8,16 +8,5 @@ sealed class UiState<out T> {
 }
 
 fun <T> UiState<T>.isLoading(): Boolean = this is UiState.Loading
-fun <T> UiState<T>.isSuccess(): Boolean = this is UiState.Success
-fun <T> UiState<T>.isError(): Boolean = this is UiState.Error
 fun <T> UiState<T>.isIdle(): Boolean = this is UiState.Idle
 
-fun <T> UiState<T>.dataOrNull(): T? = when (this) {
-    is UiState.Success -> data
-    else -> null
-}
-
-fun <T> UiState<T>.errorMessageOrNull(): String? = when (this) {
-    is UiState.Error -> message
-    else -> null
-}
